@@ -15,6 +15,8 @@
 #include "Mylib_GPIO.h"
 
 int main(void){
+    GPIOA_init();
+
     pinMode(PA1,OUTPUT);
 
     while(1){
