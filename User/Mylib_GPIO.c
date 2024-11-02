@@ -132,7 +132,7 @@ void pinMode(int pin, int mode) {
 //pin:ピン番号|speed_mode:出力スピード設定
 //speed_modeに00を指定した場合、そのままの値が返却される
 int OUTPUT_DEFAULT_SpeedMode(int speed_mode) {
-    static int mode = OUTPUT_SPEED_MODE_10MHz;
+    static int mode = OUTPUT_10MHz;
     if (speed_mode == 0b00) {
         return mode;
     }
